@@ -1,11 +1,11 @@
 [
   {
-    "id": 2,
-    "title": "Chang",
-    "price": 19,
-    "stockLevel": 17,
-    "categoryId": "Beverages",
-    "popularity": 78
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 79.99,
+    "stockLevel": 150,
+    "categoryId": "electronics",
+    "popularity": 85
   },
   {
     "id": 3,
@@ -606,5 +606,13 @@
     "stockLevel": 32,
     "categoryId": "Condiments",
     "popularity": 37
+  },
+  {
+    "id": 100,
+    "title": "Filips Telefon",
+    "price": 79.99,
+    "stockLevel": 150,
+    "categoryId": "electronics",
+    "popularity": 85
   }
 ]

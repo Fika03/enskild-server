@@ -10,7 +10,7 @@ app.use(express.json());
 
 const dataPath = path.join(__dirname, "data", "data.json");
 
-// GET route to fetch all data
+// GET ALL
 app.get("/data", async (req: Request, res: Response) => {
   try {
     const jsonData = await fs.readFile(dataPath, "utf-8");
@@ -22,7 +22,7 @@ app.get("/data", async (req: Request, res: Response) => {
   }
 });
 
-// GET SINGLE PRODUCT
+// GET SINGLE
 app.get("/data/:id", async (req: Request, res: Response) => {
   try {
     const jsonData = await fs.readFile(dataPath, "utf-8");
@@ -43,7 +43,7 @@ app.get("/data/:id", async (req: Request, res: Response) => {
   }
 });
 
-// POST route to add a new item
+// POST
 app.post("/data", async (req: Request, res: Response) => {
   try {
     const jsonData = await fs.readFile(dataPath, "utf-8");
@@ -61,7 +61,7 @@ app.post("/data", async (req: Request, res: Response) => {
   }
 });
 
-// PUT route to update an existing item by id
+// PUT, by id
 app.put("/data/:id", async (req: Request, res: Response) => {
   try {
     const jsonData = await fs.readFile(dataPath, "utf-8");
@@ -86,7 +86,7 @@ app.put("/data/:id", async (req: Request, res: Response) => {
   }
 });
 
-// DELETE route to remove an item by id
+// DELETE, by id
 app.delete("/data/:id", async (req: Request, res: Response) => {
   try {
     const jsonData = await fs.readFile(dataPath, "utf-8");
